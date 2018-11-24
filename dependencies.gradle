@@ -1,0 +1,34 @@
+ext {
+
+    // Android
+    androidBuildToolsVersion = "28.0.0"
+    androidMinSdkVersion = 16
+    androidTargetSdk = 28
+    androidCompileSdk = 28
+    applicationId = "uk.co.davidcruz.androidcleanarchitecture"
+    kotlinVersion = "1.2.71"
+
+    // Libraries
+    supportLibraryVersion = "28.0.0"
+    javaXAnotationVersion = '1.0'
+    javaxInjectionVersion = '1'
+    rxKotlinVersion = '2.2.0'
+
+    // Testing Libraries
+    jUnitVersion = '4.12'
+    assertJVersion = '3.8.0'
+    mockitoVersion = '2.0.0'
+
+    domainDependecies = [
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaXAnotationVersion}",
+            javaxInject    : "javax.inject:javax.inject:${javaxInjectionVersion}",
+            rxKotlin       : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}"
+    ]
+
+    domainTestDependecies = [
+            jUnit  : "junit:junit:${jUnitVersion}",
+            assertJ: "org.assertj:assertj-core:${assertJVersion}",
+            mockito: "com.nhaarman.mockitokotlin2:mockito-kotlin:${mockitoVersion}"
+    ]
+
+}
